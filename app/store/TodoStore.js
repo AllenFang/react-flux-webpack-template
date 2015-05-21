@@ -1,6 +1,6 @@
 import dispatcher from "../dispatcher/Dispatcher";
-import constants from "../Constant/Constants";
-import events from "events";
+import {TODO} from "../Constant/Constants";
+import {EventEmitter} from 'events';
 import assign from "object-assign";
 
 var CHANGE_EVENT = 'change';
@@ -28,7 +28,7 @@ function _todoAddSuccess(todos){
   _state.todos = todos;
 }
 
-var TodoStore = assign({}, events.EventEmitter.prototype, {
+var TodoStore = assign({}, EventEmitter.prototype, {
   getState: function(){
 		return _state;
 	},
@@ -46,21 +46,21 @@ var TodoStore = assign({}, events.EventEmitter.prototype, {
 	}
 });
 
-dispatcher.register(function(action){
+dispatcher.register((action) => {
 	switch(action.type){
-		case constants.LOAD_TODO:
+		case TODO.LOAD_TODO:
       _todoLoading();
       TodoStore.emitChange();
 			break;
-		case constants.LOAD_TODO_SUCCESS:
+		case TODO.LOAD_TODO_SUCCESS:
       _todoLoadSuccess(action.todos);
       TodoStore.emitChange();
 			break;
-    case constants.ADD_TODO_SUCCESS:
+    case TODO.ADD_TODO_SUCCESS:
       _todoAddSuccess(action.todos);
       TodoStore.emitChange();
       break;
-    case constants.LOAD_TODO_ERROR:
+    case TODO.LOAD_TODO_ERROR:
       _todoLoadError(action.error);
       TodoStore.emitChange();
 			break;

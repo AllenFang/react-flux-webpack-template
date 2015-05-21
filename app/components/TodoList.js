@@ -17,7 +17,7 @@ class TodoList extends React.Component{
       return(<TodoItem key={i}
                        id={todo.id}
                        selected={todo.id == this.state.currSelectItem}
-                       onClick={this.handleItemClick.bind(this)}>{todo.name}</TodoItem>)
+                       onClick={(e) => this.handleItemClick(e)}>{todo.name}</TodoItem>)
     }, this);
     return(
       <ul className="list-group">

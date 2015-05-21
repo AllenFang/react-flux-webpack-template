@@ -1,5 +1,5 @@
 # react-flux-webpack-template
-### Introduction
+### Overview
 It's a react and flux template with webpack, it will be improved consistently in future.
 
 This package include these features
@@ -48,7 +48,7 @@ $ npm test
 ```
 
 
-### Todo & Road map
+### Todo & Roadmap
 - Maybe change http request library, I consider [isomorphic-fetch](https://github.com/matthew-andrews/isomorphic-fetch) will be batter.
 
 - Include other flux implementations, like [alt](https://github.com/goatslacker/alt).
