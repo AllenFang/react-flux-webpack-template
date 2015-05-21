@@ -56,3 +56,5 @@ $ npm test
 - Add [immutable.js](https://github.com/facebook/immutable-js) to this architecture.
 
 - Flux testing not yet finish.
+
+- Improve flux demo.
