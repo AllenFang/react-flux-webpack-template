@@ -2,6 +2,10 @@
   "name": "react-flux-webpack-template",
   "version": "0.1.0",
   "description": "It's a react and flux template with webpack",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AllenFang/react-flux-webpack-template.git"
+  },
   "scripts": {
     "prod": "NODE_ENV=production webpack -p",
     "dev": "webpack-dev-server --devtool eval --progress --hot --colors --content-base ./build",
