@@ -1,0 +1,18 @@
+{
+  "name": "react-flux-webpack-template",
+  "version": "0.1.0",
+  "authors": [
+    "AllenFang"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-sass-official": "~3.3.4"
+  }
+}
