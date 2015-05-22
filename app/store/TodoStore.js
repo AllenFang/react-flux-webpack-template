@@ -28,6 +28,10 @@ function _todoAddSuccess(todos){
   _state.todos = todos;
 }
 
+function _todoAddByEmptyName(){
+  _state.msg = "Todo name should not be empty.";
+}
+
 var TodoStore = assign({}, EventEmitter.prototype, {
   getState: function(){
 		return _state;
@@ -64,6 +68,9 @@ dispatcher.register((action) => {
       _todoLoadError(action.error);
       TodoStore.emitChange();
 			break;
+    case TODO.TODO_EMPTY_ERROR:
+      _todoAddByEmptyName();
+      TodoStore.emitChange();
 		default:
 	}
 });

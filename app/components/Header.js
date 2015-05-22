@@ -7,9 +7,7 @@ class Header extends React.Component{
 
   handleAddBtnClick(e){
     var todoName = this.refs.todoName.getDOMNode().value;
-    if(todoName !== ""){
-      TodoAction.addTodo(todoName);
-    }
+    TodoAction.addTodo(todoName);
   }
 
   render(){
@@ -20,6 +18,7 @@ class Header extends React.Component{
           <input ref="todoName" type="text" placeholder="New Todo Name" />
           <button className="btn btn-primary" onClick={(e) => this.handleAddBtnClick(e)}>Add</button>
         </div>
+        <br/>
       </div>
     )
   }

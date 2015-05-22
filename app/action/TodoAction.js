@@ -22,16 +22,23 @@ export default {
   },
 
   addTodo: function(todoName){
-    TodoWebAPI.addTodo(todoName, (json) => {
+
+    if(todoName === ""){
       dispatcher.dispatch({
-        type: TODO.ADD_TODO_SUCCESS,
-        todos: json
+        type: TODO.TODO_EMPTY_ERROR
       });
-    }, (error) => {
-      dispatcher.dispatch({
-        type: TODO.LOAD_TODO_ERROR,
-        error: error
+    } else {
+      TodoWebAPI.addTodo(todoName, (json) => {
+        dispatcher.dispatch({
+          type: TODO.ADD_TODO_SUCCESS,
+          todos: json
+        });
+      }, (error) => {
+        dispatcher.dispatch({
+          type: TODO.LOAD_TODO_ERROR,
+          error: error
+        });
       });
-    });
+    }
   }
 }
