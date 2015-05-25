@@ -1,6 +1,4 @@
-'use strict'
 import React from "react";
-
 import Header from "./Header";
 import TodoList from "./TodoList";
 import TodoAction from "../action/TodoAction";
@@ -13,7 +11,7 @@ class TodoApp extends React.Component{
     this.state = {
       todos: [],
       msg: null
-    }
+    };
   }
 
   componentDidMount() {
@@ -26,14 +24,14 @@ class TodoApp extends React.Component{
 	}
 
   render(){
-    return(
+    return (
       <div className="row">
         <div className="col-md-4">
           <Header msg={this.state.msg}/>
           <TodoList todos={this.state.todos}/>
         </div>
       </div>
-    )
+    );
   }
 
   _onChange(){

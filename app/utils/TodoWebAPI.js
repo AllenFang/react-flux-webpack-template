@@ -1,5 +1,5 @@
 function json(response) {
-  return response.json()
+  return response.json();
 }
 
 var host = "http://localhost:3000";
@@ -28,4 +28,4 @@ export default {
       .catch(error);
   }
 
-}
+};

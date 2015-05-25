@@ -3,6 +3,7 @@
 It's a react and flux template with webpack, it will be improved consistently in future.
 
 This package include these features
+- Written by ECMAScript 6.
 - A simple react and flux demo.
 - A workflow with webpack, include javascript and style bundling, live reload, vendor handling ...etc.
 - This demo written by es6 and use babel to transfer to es5.
@@ -11,6 +12,7 @@ This package include these features
 - Use [fetch](https://github.com/github/fetch) to perform a http request not the jquery.
 - Use express as a pure backend restful service.
 - A components testing with Jest.
+- Integrate eslint with webpack.
 
 
 ### Development

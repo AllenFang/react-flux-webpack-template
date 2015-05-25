@@ -1,5 +1,3 @@
-'use strict'
-
 import React from "react";
 import TodoAction from "../action/TodoAction";
 
@@ -20,13 +18,13 @@ class Header extends React.Component{
         </div>
         <br/>
       </div>
-    )
+    );
   }
 }
 Header.propTypes = {
   msg: React.PropTypes.string
-}
+};
 Header.defaultProps = {
   msg: null
-}
+};
 export default Header;

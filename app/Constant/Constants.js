@@ -4,4 +4,4 @@ export const TODO = {
   ADD_TODO_SUCCESS: "add_success",
   LOAD_TODO_ERROR: "error",
   TODO_EMPTY_ERROR: "todo_empty_error"
-}
+};

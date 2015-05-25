@@ -1,6 +1,6 @@
 {
   "name": "react-flux-webpack-template",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "It's a react and flux template with webpack",
   "repository": {
     "type": "git",
@@ -21,6 +21,9 @@
     "cookie-parser": "~1.3.4",
     "css-loader": "^0.12.1",
     "debug": "~2.1.1",
+    "eslint": "^0.21.2",
+    "eslint-loader": "^0.11.2",
+    "eslint-plugin-react": "^2.3.0",
     "express": "~4.12.2",
     "jest-cli": "^0.4.5",
     "morgan": "~1.5.1",

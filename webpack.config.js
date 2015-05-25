@@ -30,6 +30,9 @@ var config = {
 
   module:{
     noParse: [],
+    preLoaders: [
+      {test: /\.js$/, loader: "eslint-loader", exclude: /node_modules/}
+    ],
     loaders:[
       {test: /\.js$/, exclude: [node_modules_dir], loaders: ["react-hot", "babel-loader"]},
       {test: /\.scss$/, loader: "style-loader!css-loader!sass-loader?includePaths[]="+assets }

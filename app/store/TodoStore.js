@@ -46,7 +46,7 @@ var TodoStore = assign({}, EventEmitter.prototype, {
 	},
 
 	removeChangeListener: function(callback) {
-  	this.removeListener(CHANGE_EVENT, callback);
+    this.removeListener(CHANGE_EVENT, callback);
 	}
 });
 

@@ -1,5 +1,3 @@
-'use strict'
-
 import React from "react";
 import TodoItem from "./TodoItem";
 
@@ -9,7 +7,7 @@ class TodoList extends React.Component{
 		super(props);
     this.state = {
       currSelectItem: null
-    }
+    };
   }
 
   render(){
@@ -17,13 +15,13 @@ class TodoList extends React.Component{
       return(<TodoItem key={i}
                        id={todo.id}
                        selected={todo.id == this.state.currSelectItem}
-                       onClick={(e) => this.handleItemClick(e)}>{todo.name}</TodoItem>)
+                       onClick={(e) => this.handleItemClick(e)}>{todo.name}</TodoItem>);
     }, this);
     return(
       <ul className="list-group">
         {todoElm}
       </ul>
-    )
+    );
   }
 
   handleItemClick(todoId){
@@ -34,5 +32,5 @@ class TodoList extends React.Component{
 }
 TodoList.propTypes = {
   todos: React.PropTypes.array
-}
+};
 export default TodoList;
