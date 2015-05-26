@@ -1,6 +1,6 @@
 jest.dontMock('classnames');
-jest.dontMock('../app/components/TodoItem.js');
-jest.dontMock('../app/components/TodoList.js');
+jest.dontMock('../components/TodoItem.js');
+jest.dontMock('../components/TodoList.js');
 
 describe('Todo Item Test', function() {
 
@@ -12,8 +12,8 @@ describe('Todo Item Test', function() {
 
   beforeEach(function(){
     React = require('react/addons');
-    TodoItem = require('../app/components/TodoItem.js');
-    TodoList = require('../app/components/TodoList.js');
+    TodoItem = require('../components/TodoItem.js');
+    TodoList = require('../components/TodoList.js');
     TestUtils = React.addons.TestUtils;
   });
 

@@ -1,4 +1,4 @@
-jest.dontMock('../app/components/Header.js');
+jest.dontMock('../components/Header.js');
 
 describe('Todo Header Test', function() {
 
@@ -10,8 +10,8 @@ describe('Todo Header Test', function() {
 
   beforeEach(function(){
     React = require('react/addons');
-    Header = require('../app/components/Header.js');
-    TodoAction = require('../app/action/TodoAction.js');
+    Header = require('../components/Header.js');
+    TodoAction = require('../action/TodoAction.js');
     TestUtils = React.addons.TestUtils;
   });
 
